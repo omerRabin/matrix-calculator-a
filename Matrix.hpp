@@ -35,10 +35,11 @@ namespace zich {
     Matrix operator+(Matrix const &other);
     Matrix operator+();
     Matrix operator++(int x);
-    friend Matrix operator++(const Matrix& mat); // the new method i added
+    friend Matrix operator++(const Matrix& mat); 
     Matrix operator-(Matrix const &other);
     Matrix operator-();
     Matrix operator--(int x);
+    friend Matrix operator--(const Matrix& mat); 
     Matrix operator+=(Matrix const &other);
     Matrix operator-=(Matrix const &other);
     bool operator>(Matrix &other);
