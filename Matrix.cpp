@@ -93,7 +93,11 @@ Matrix Matrix::operator--(int x){ // good
         }
     return m;
 }
-
+Matrix operator--(const Matrix& mat){
+    Matrix m = Matrix();
+    m = m--;
+    return m;
+}
 Matrix Matrix::operator-(Matrix const &other) // good
     {
        if(other.matrix->size()!=this->matrix->size()){
