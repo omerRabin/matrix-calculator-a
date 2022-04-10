@@ -63,6 +63,11 @@ Matrix Matrix::operator++(int x){ // good
         }
     return m;
 }
+Matrix operator++(const Matrix& mat){
+    Matrix m = Matrix();
+    m = m++;
+    return m;
+}
 //-------------------
 Matrix Matrix::operator-(){ //unary - Good
     Matrix m = Matrix();
